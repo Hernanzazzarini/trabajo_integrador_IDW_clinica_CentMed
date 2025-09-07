@@ -755,7 +755,7 @@ Urgencias
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 Clínica Salud Integral. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Clínica Salud Integral. Todos los derechos reservados.</p>
         </div>
     </div>
 </footer>
