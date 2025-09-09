@@ -1,4 +1,4 @@
- :root {
+:root {
     --color-primary: #2b5e8e;
     --color-secondary: #3a9aad;
     --color-accent: #ff6b6b;
@@ -19,14 +19,14 @@
     box-sizing: border-box;
 }
 
-body {
+.institucional body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--color-dark);
     background: #f9f9f9;
 }
 
-.container {
+.institucional .container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -34,7 +34,7 @@ body {
 }
 
 /* Header */
-.header {
+.institucional .header {
     background: var(--color-primary);
     color: white;
     text-align: center;
@@ -42,19 +42,19 @@ body {
     margin-bottom: var(--spacing-lg);
 }
 
-.header h1 {
+.institucional .header h1 {
     margin: 0 0 var(--spacing-sm) 0;
     font-size: 2.2rem;
 }
 
-.header p {
+.institucional .header p {
     margin: 0;
     font-size: 1.1rem;
     opacity: 0.9;
 }
 
 /* Secciones */
-.section {
+.institucional .section {
     background: white;
     padding: var(--spacing-lg);
     margin: var(--spacing-lg) 0;
@@ -62,24 +62,24 @@ body {
     box-shadow: var(--box-shadow);
 }
 
-.section h2 {
+.institucional .section h2 {
     color: var(--color-primary);
     margin-bottom: var(--spacing-md);
     padding-bottom: var(--spacing-sm);
     border-bottom: 2px solid var(--color-light);
 }
 
-.content p {
+.institucional .content p {
     margin-bottom: var(--spacing-md);
     text-align: justify;
 }
 
 /* Lista de valores */
-.values-list {
+.institucional .values-list {
     list-style: none;
 }
 
-.values-list li {
+.institucional .values-list li {
     background: var(--color-light);
     margin-bottom: var(--spacing-sm);
     padding: var(--spacing-md);
@@ -88,99 +88,115 @@ body {
 }
 
 /* Grid de equipamiento */
-.equipment-grid {
+.institucional .equipment-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-lg);
     margin-top: var(--spacing-md);
 }
 
-.equipment-item {
+.institucional .equipment-item {
     overflow: hidden;
     border-radius: var(--border-radius);
 }
 
-.clinica-image {
+.institucional .clinica-image {
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: var(--border-radius);
 }
 
-.equipment-info {
+.institucional .equipment-info {
     padding: var(--spacing-md) 0;
 }
 
-.equipment-info h3 {
+.institucional .equipment-info h3 {
     color: var(--color-primary);
     margin-bottom: var(--spacing-sm);
 }
 
-.equipment-info ul {
+.institucional .equipment-info ul {
     padding-left: var(--spacing-md);
     margin-bottom: var(--spacing-md);
 }
 
-.equipment-info li {
+.institucional .equipment-info li {
     margin-bottom: var(--spacing-sm);
 }
 
 /* Footer */
-.footer {
+.institucional .footer {
     background-color: var(--color-dark);
     color: white;
     padding: var(--spacing-xl) 0;
     margin-top: var(--spacing-xl);
 }
 
-.footer-content {
+.institucional .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: var(--spacing-lg);
 }
 
-.footer-section h3 {
+.institucional .footer-section h3 {
     color: var(--color-secondary);
     margin-bottom: var(--spacing-md);
     padding-bottom: var(--spacing-sm);
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.footer-section p, .footer-section li {
+.institucional .footer-section p,
+.institucional .footer-section li {
     margin-bottom: var(--spacing-sm);
 }
 
-.footer-section a {
+.institucional .footer-section a {
     color: #ddd;
     text-decoration: none;
 }
 
-.footer-section a:hover {
+.institucional .footer-section a:hover {
     color: var(--color-secondary);
 }
 
-.footer-bottom {
+.institucional .footer-bottom {
     text-align: center;
     margin-top: var(--spacing-lg);
     padding-top: var(--spacing-md);
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+/* Boton */
+.button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 4px 8px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.button:hover {
+    background-color: var(--color-secondary);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-    .equipment-grid {
+    .institucional .equipment-grid {
         grid-template-columns: 1fr;
     }
-    
-    .header h1 {
+
+    .institucional .header h1 {
         font-size: 1.8rem;
     }
-    
-    .header p {
+
+    .institucional .header p {
         font-size: 1rem;
     }
-    
-    .footer-content {
+
+    .institucional .footer-content {
         grid-template-columns: 1fr;
         text-align: center;
     }
